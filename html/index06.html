@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ejercicio 5</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+       p {
+           font-size: 22px;
+       }
+        .header {
+            background-color: rgb(0, 185, 0);
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 30px 0;
+        }
+        
+        .greensquare {
+            background-color: rgb(0, 185, 0);
+            height: 150px;
+            width: 100%;
+            margin: 0.5vw;
+        }
+        .col1, .col2, .col3 {
+            width: 33%;
+            float: left;
+            box-sizing: border-box;
+            padding: 5%;
+        }
+         @media (max-width: 900px) {
+            .col3 { 
+                width: 100%;
+                clear: both;
+                }
+            .col1, .col2 {
+                width: 50%
+            }
+            }
+         @media (max-width: 600px) {
+            .col1, .col2, .col3 { 
+                width: 100%;
+                clear: both;
+                }
+            }
+    </style>
+</head>
+<body>
+ <div class="header">
+     <h1>hola !!</h1>
+     <h1>Este es un ejercicio de grillas</h1>
+ </div>
+ <div class="content">
+    <div class="col1">
+        <div class="greensquare"></div>
+        <div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod molestias hic qui. Ea odit sed numquam natus impedit vitae, quasi recusandae maxime facere illum unde, doloribus qui placeat consectetur reprehenderit?</p></div>
+    </div>
+    <div class="col2">
+        <div class="greensquare"></div>
+        <div><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis ea voluptatem, ex nemo sunt ipsa quaerat adipisci amet perspiciatis architecto fugiat dolorem similique quas, illum quos deserunt! Sed, unde sequi?</p></div>
+    </div>   
+    <div class="col3">
+        <div class="greensquare"></div>
+        <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam vel eaque fugit explicabo officiis nostrum nulla non, molestiae est expedita facere vitae in, quod cupiditate odit possimus modi, quis eveniet.</p></div>
+    </div>
+ </div>
+</body>
+</html>
